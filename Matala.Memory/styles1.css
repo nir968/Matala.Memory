@@ -1,0 +1,132 @@
+.buttons-container>* {
+    margin: 0 0 0 10px;
+    font-size: 1.5rem;
+    font-weight: normal;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 0px;
+    margin-top: 0px;
+    background-color: yellow;
+}
+
+
+.a{
+    color:red;
+    text-decoration: none;
+}
+/*
+.buttons-container > * {
+    margin: 0 0 0 10px;
+}
+
+.main-container > * {
+    margin: 15px 0;
+}
+*/
+
+
+#big-image>* {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+}
+
+
+#logo-image>* {
+    margin:auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 00vw;
+    height: 00vh;
+    background-position: 0;
+    z-index: -1;
+    background-color: transparent;
+}
+
+/* <div class="logoAddition">Memory game</div>
+
+.logoAddition {
+    color:red;
+    margin-top:auto;
+    font-size: 50px;
+    display: flex;
+    padding: 8px 16px;
+    width: 600px; 
+}
+*/
+
+body {
+    background-color: #202124;
+}
+
+
+
+.main-container {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    flex-direction: column;
+    padding-top: 40px;
+    margin-top: 100px;
+    margin: 75px 0;
+}
+
+
+
+
+.material-symbols-outlined {
+    color: #bdc1c6;
+}
+
+
+
+/* Style for search bar container */
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    background-color: 757575;
+    border: 1px solid #5f6368;
+    border-radius: 24px;
+    padding: 8px 16px;
+    width: 600px; 
+    
+}
+
+.search-bar-container:hover {
+    background-color: #303134;
+    box-shadow: 0 1px 6px 0 #171717;
+    border-color: yellow;
+    transition: background-color 0.2s ease;
+}
+
+
+
+/* Style for input text */
+input[type="text"] {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 16px;
+    color: white;
+    
+}
+
+input[type="text"]::placeholder {
+    color: white;
+    align-items: center;
+    justify-content: center; 
+    display: flex;
+}
+
+
