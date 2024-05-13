@@ -2,7 +2,6 @@ let matchedPairs = 0;
 let gameWon = false;
 
 
-
 function duplicateArrayElements(arr) {
     var duplicated = [];
     for (var i = 0; i < arr.length; i++) {
@@ -47,7 +46,6 @@ const duplicatedImages = duplicateArrayElements(imgs)
 
 const shuffledImages = shuffleArray(duplicatedImages)
 
-
 const container = document.getElementById('container')
 
 let selectedCardId;
@@ -77,9 +75,6 @@ function resetGame() {
     // Reset game won flag
     gameWon = false;
 }
-
-
-
 
 
 const disableCards = (id1, id2) => {
@@ -147,12 +142,7 @@ shuffledImages.forEach((img, i) => {
 });
 
 
-
-
-
-
-    var storedName = sessionStorage.getItem("nameDisplay") || ""; // Use an empty string as the default value
-
+var storedName = sessionStorage.getItem("nameDisplay") || ""; // Use an empty string as the default value
 
 
     // Display the stored input value on Page 2
@@ -160,7 +150,6 @@ var nameDisplay = document.getElementById("nameDisplay"); // Get the element whe
 if (nameDisplay) {
       nameDisplay.innerText = "Hello, " + storedName + "!";
  }
-
 
   
 window.addEventListener('DOMContentLoaded', () => {
@@ -171,7 +160,6 @@ window.addEventListener('DOMContentLoaded', () => {
   // Remove the stored name from sessionStorage after displaying it
   sessionStorage.removeItem('userName');
 });
-
 
 
 
@@ -190,6 +178,8 @@ const checkGameWon = () => {
     }
 };
 
+
+//timer
 let startTime;
 let elapsedTime;
 let timerInterval;
@@ -217,30 +207,6 @@ function formatElapsedTime(elapsedTime) {
     return `${padZero(minutes)}:${padZero(seconds)}`;
 }
 
-
-
 startTimer();
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-
-
-
-
-*/ 

@@ -1,5 +1,3 @@
-
-
 const input = document.getElementById('nameInput');
 const numCardsInput = document.getElementById('numCardsInput');
 const acceptedValues = [8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30];
