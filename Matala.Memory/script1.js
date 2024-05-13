@@ -1,23 +1,35 @@
-// Get the input element
-var input = document.getElementById("nameInput");
 
-// Add event listener for key press
-input.addEventListener("keypress", function (event) {
-    // Check if the key pressed is Enter (key code 13)
-    if (event.keyCode === 13) {
-        // Get the value of the input field
-        var name = input.value;
-        // Navigate to the next page (replace "nextPage.html" with the URL of your next page)
-        window.location.href = "page2.html";
+
+const input = document.getElementById('nameInput');
+const numCardsInput = document.getElementById('numCardsInput');
+const acceptedValues = [8, 10, 12, 14, 16, 18, 20, 22, 24, 26, 28, 30];
+
+input.addEventListener('keydown', function(event) {
+    if (event.key === 'Enter' || event.code === 'Enter') {
+        const name = input.value;
+        const numCards = parseInt(numCardsInput.value);
+
+        if (acceptedValues.includes(numCards)) {
+            sessionStorage.setItem('userName', name);
+            sessionStorage.setItem('numCards', numCards);
+            window.location.href = 'page2.html';
+        } else {
+            alert('Please enter even number between 8-30.');
+        }
     }
 });
 
-function saveName() {
-    // Get the input value
-    var name = document.getElementById("nameInput").value;
-    // Store the input value in localStorage
-    localStorage.setItem("userName", name);
-    // Redirect to Page 2
-    window.location.href = "page2.html";
-  }
+const goToPage2Button = document.getElementById('goToPage2');
+goToPage2Button.addEventListener('click', () => {
+    const name = input.value;
+    const numCards = parseInt(numCardsInput.value);
+
+    if (acceptedValues.includes(numCards)) {
+        sessionStorage.setItem('userName', name);
+        sessionStorage.setItem('numCards', numCards);
+        window.location.href = 'page2.html';
+    } else {
+        alert('Please enter even number between 8-30.');
+    }
+});
 

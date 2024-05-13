@@ -1,21 +1,34 @@
-body {
+ body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-color: #f0f0f0;
+    
   }
   
-  .timer {
-    font-size: 5rem;
-    font-weight:bolder;
+  
+  #timer {
+    font-size: 3rem;
+    font-weight:100;
     margin-bottom: 1rem;
+    margin-top: 0rem;
     display: flex;
-    /* justify-content: center; */
+    justify-content: center; 
     align-items: center;
     flex-direction: column;
     padding-top: 40px;
     margin-top: 100px;
-    color: red;
+    color: yellow;
   }
+
+  #nameDisplay  {
+    font-size: 3rem;
+    font-weight:100;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content:flex-start; 
+    align-items: center;
+    flex-direction: column;
+    color: yellow;
+}
 
 
   #container {
@@ -62,3 +75,4 @@ body {
     background-position: center;
     z-index: -1;
 }
+

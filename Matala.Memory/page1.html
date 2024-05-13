@@ -28,21 +28,27 @@
     <div id="big-image">
       <img src="https://i.redd.it/cqnlij4mzj591.jpg">
     </div>
-  
+
+    
+
+    
+    
     <div class="search-bar-container">
-      <input type="text" name="nameInput" placeholder="Enter your name">
+      <input type="text" id="nameInput" placeholder="Enter your name">
+      <input type="number" id="numCardsInput" placeholder="cards num" min="8" max="30" step="2">
     </div>
 
+
+
+
+    <div id="nameDisplayDiv"></div>
 
     <div class="buttons-container">
-      <button type="button" class="btn btn-warning" onclick="saveName()">
-        <div href="page2.html" class="a">Start!</div>
-      </button>
+      <button type="button" class="btn btn-warning" id="goToPage2">Start!</button>
     </div>
+    
 
   </div>
-
-
 
   
   <script src="script1.js"></script>
