@@ -1,3 +1,4 @@
+
 let matchedPairs = 0;
 let gameWon = false;
 
@@ -22,6 +23,8 @@ function shuffleArray(arr) {
     return arr;
 }
 
+
+
 //the picture of the flipped card
 const imgs = [
 /*1*/ "https://www.showmetech.com.br/wp-content/uploads//2023/06/image-30-1024x650.png", // Gustavo Fring
@@ -37,16 +40,16 @@ const imgs = [
 /*11*/"https://vignette.wikia.nocookie.net/breakingbad/images/f/f7/Cast_bb_800x600_hank-schrader.jpg/revision/latest?cb=20170613184022", //Hank Schrader 
 /*12*/"https://upload.wikimedia.org/wikipedia/he/0/03/Walter_White_S5B.png", // Walter White
 /*13*/"https://www.emp-online.es/dw/image/v2/BBQV_PRD/on/demandware.static/-/Sites-master-emp/default/dwf02aad9d/images/3/5/5/7/355776d-emp.jpg?sfrm=png", //Los Pollos Hermanos
-/*14*/"https://i.pinimg.com/1200x/11/3e/a8/113ea8e152f158630838a5c9d4e163d2.jpg",//Statue of Liberty
-/*15*/"https://static.wikia.nocookie.net/breakingbad/images/a/af/Huell_BCS_S3.png/revision/latest?cb=20210610231000"//Huell Babineaux
+/*14*/"https://i.pinimg.com/1200x/11/3e/a8/113ea8e152f158630838a5c9d4e163d2.jpg", //Statue of Liberty
+/*15*/"https://static.wikia.nocookie.net/breakingbad/images/a/af/Huell_BCS_S3.png/revision/latest?cb=20210610231000" //Huell Babineaux
 ];
 
 
-const duplicatedImages = duplicateArrayElements(imgs)
+const duplicatedImages = duplicateArrayElements(imgs);
 
-const shuffledImages = shuffleArray(duplicatedImages)
+const shuffledImages = shuffleArray(duplicatedImages);
 
-const container = document.getElementById('container')
+const container = document.getElementById('container');
 
 let selectedCardId;
 
@@ -82,7 +85,6 @@ const disableCards = (id1, id2) => {
     const img2 = document.getElementById(id2);
     img1.classList.add('disabled');
     img2.classList.add('disabled');
-
 }
 
 
@@ -162,8 +164,6 @@ window.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
-
 const checkGameWon = () => {
     if (matchedPairs === shuffledImages.length / 2) {
         setTimeout(() => {
@@ -208,5 +208,6 @@ function formatElapsedTime(elapsedTime) {
 }
 
 startTimer();
+
 
 
