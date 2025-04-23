@@ -1,3 +1,5 @@
+# 🧠 Memory Game
+
 A simple memory matching game built with **HTML**, **CSS**, and **JavaScript**. Flip cards, match pairs, and test your memory!
 
 ## 🚀 How to Play
